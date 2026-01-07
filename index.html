@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aman Khan — Web Developer</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="hero">
+      <nav class="navbar">
+        <h2 class="logo">Aman<span style="color: darkmagenta">.dev</span></h2>
+
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Mobile menu toggle -->
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+
+      <div class="hero-content" id="home">
+        <img
+          src="assets/imgs/profile.jpeg"
+          alt="Aman Khan"
+          class="profile-pic"
+        />
+        <h2>Hi, I'm <span id="typed"></span></h2>
+        <p class="hero-subtitle">
+          Web Developer <span style="display: none">& 3D Designer</span>
+        </p>
+        <p class="hero-description">
+          I create responsive websites
+          <span style="display: none">and engaging 3D experiences</span>
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a
+            href="https://wa.me/916398967451?text=Hi%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project%20with%20you."
+            class="btn btn-primary"
+            target="_blank"
+            >Hire Me</a
+          >
+        </div>
+
+        <!-- Social links -->
+        <div class="social-links">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-dribbble"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-bottom-shape"></div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I'm a passionate web developer with expertise in creating modern,
+              responsive websites and applications. I specialize in front-end
+              development with React and have a keen eye for design and user
+              experience.
+            </p>
+            <p>
+              I am a web developer who specializes in building responsive
+              websites that work smoothly across all devices. I focus on clean
+              code, modern layouts, and user-friendly design.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+              <div class="stat" style="display: none">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Happy Clients</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <img src="assets/imgs/me.jpg" alt="About Aman Khan" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-subtitle">
+          Technologies & tools I use in real projects
+        </p>
+
+        <!--  FILTER BUTTONS -->
+        <div class="skill-filters" style="display: none">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="backend">Backend</button>
+        </div>
+
+        <!-- SKILLS GRID -->
+        <div class="skills-grid">
+          <!-- HTML -->
+          <div class="skill-card frontend">
+            <span class="skill-badge">Frontend</span>
+            <div class="skill-icon">
+              <img src="assets/imgs/html.png" />
+            </div>
+            <h3>HTML</h3>
+            <p>Semantic markup, accessibility, SEO</p>
+            <div class="skill-detail">Used in 10+ production projects</div>
+            <div class="skill-level">
+              <div class="level-bar">
+                <div class="level-progress" data-level="95"></div>
+              </div>
+              <span>95%</span>
+            </div>
+          </div>
+
+          <!-- CSS -->
+          <div class="skill-card frontend">
+            <span class="skill-badge">Frontend</span>
+            <div class="skill-icon">
+              <img src="assets/imgs/css.png" />
+            </div>
+            <h3>CSS</h3>
+            <p>Flexbox, Grid, animations, responsive</p>
+            <div class="skill-detail">Advanced layouts & UI systems</div>
+            <div class="skill-level">
+              <div class="level-bar">
+                <div class="level-progress" data-level="90"></div>
+              </div>
+              <span>90%</span>
+            </div>
+          </div>
+
+          <!-- JS -->
+          <div class="skill-card frontend">
+            <span class="skill-badge">Frontend</span>
+            <div class="skill-icon">
+              <img src="assets/imgs/js.png" />
+            </div>
+            <h3>JavaScript</h3>
+            <p>ES6+, DOM, APIs</p>
+            <div class="skill-detail">Real-world logic & interactions</div>
+            <div class="skill-level">
+              <div class="level-bar">
+                <div class="level-progress" data-level="85"></div>
+              </div>
+              <span>85%</span>
+            </div>
+          </div>
+
+          <!-- React -->
+          <div class="skill-card frontend">
+            <span class="skill-badge">Frontend</span>
+            <div class="skill-icon">
+              <img src="assets/imgs/react.png" />
+            </div>
+            <h3>React</h3>
+            <p>Components, hooks, state</p>
+            <div class="skill-detail">SPA & dashboard projects</div>
+            <div class="skill-level">
+              <div class="level-bar">
+                <div class="level-progress" data-level="80"></div>
+              </div>
+              <span>80%</span>
+            </div>
+          </div>
+
+          <!-- Next -->
+          <div class="skill-card frontend" style="display: none">
+            <span class="skill-badge">Frontend</span>
+            <div class="skill-icon">
+              <img src="assets/imgs/next.png" />
+            </div>
+            <h3>Next.js</h3>
+            <p>SSR, SSG, SEO apps</p>
+            <div class="skill-detail">Performance & SEO focused apps</div>
+            <div class="skill-level">
+              <div class="level-bar">
+                <div class="level-progress" data-level="75"></div>
+              </div>
+              <span>75%</span>
+            </div>
+          </div>
+
+          <!-- Node -->
+          <div class="skill-card backend" style="display: none">
+            <span class="skill-badge backend-badge">Backend</span>
+            <div class="skill-icon">🛠</div>
+            <h3>Node.js</h3>
+            <p>REST APIs, auth</p>
+            <div class="skill-detail">Backend for real apps</div>
+            <div class="skill-level">
+              <div class="level-bar">
+                <div class="level-progress" data-level="70"></div>
+              </div>
+              <span>70%</span>
+            </div>
+          </div>
+
+          <!-- Mongo -->
+          <div class="skill-card backend">
+            <span class="skill-badge backend-badge">Backend</span>
+            <div class="skill-icon">
+              <img src="assets/imgs/Node.js.png" alt="Node.js" />
+            </div>
+            <h3>NodeJS</h3>
+            <p>CRUD, schemas</p>
+            <div class="skill-detail">Backend</div>
+            <div class="skill-level">
+              <div class="level-bar">
+                <div class="level-progress" data-level="65"></div>
+              </div>
+              <span>65%</span>
+            </div>
+          </div>
+          <div class="skill-card backend">
+            <span class="skill-badge backend-badge">Database</span>
+            <div class="skill-icon">
+              <img src="assets/imgs/database.png" alt="" />
+            </div>
+            <h3>SQL</h3>
+
+            <div class="skill-detail">Database design & queries</div>
+            <div class="skill-level">
+              <div class="level-bar">
+                <div class="level-progress" data-level="65"></div>
+              </div>
+              <span>80%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="education-section">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">Academic journey & learning milestones</p>
+
+        <div class="education-wrapper">
+          <!-- LEFT TIMELINE -->
+          <div class="education-timeline-line"></div>
+
+          <!-- CARD 1 -->
+          <div class="education-block" style="display: none">
+            <div class="edu-marker"></div>
+            <div class="education-card glass">
+              <span class="edu-year">2024 – Present</span>
+              <h3>Bachelor of Computer Applications (BCA)</h3>
+              <h4>XYZ University</h4>
+
+              <ul class="edu-highlights">
+                <li>Web Development & Software Engineering</li>
+                <li>Database Management Systems</li>
+                <li>Real-world Projects & LMS systems</li>
+              </ul>
+
+              <div class="edu-progress">
+                <span>Completion</span>
+                <div class="progress-bar">
+                  <div class="progress-fill" data-progress="40"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="education-block">
+            <div class="edu-marker"></div>
+            <div class="education-card glass">
+              <span class="edu-year">2026 – Present</span>
+              <h3>12th Standard (PCB)</h3>
+              <h4>UP Board</h4>
+
+              <ul class="edu-highlights">
+                <li>Physics, Chemistry, Biology</li>
+                <li>Self-transition to IT field</li>
+                <li>Started Web Development Journey</li>
+              </ul>
+
+              <div class="edu-progress">
+                <span>Completion</span>
+                <div class="progress-bar">
+                  <div class="progress-fill" data-progress="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="education-block">
+            <div class="edu-marker"></div>
+            <div class="education-card glass">
+              <span class="edu-year">2024 – 2025</span>
+              <h3>10th Standard</h3>
+              <h4>UP Board</h4>
+
+              <ul class="edu-highlights">
+                <li>Logical Thinking and</li>
+                <li>Problem Solving Skills</li>
+                <li>Strong Academic Foundation</li>
+              </ul>
+
+              <div class="edu-progress">
+                <span>Completion</span>
+                <div class="progress-bar">
+                  <div class="progress-fill" data-progress="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">Some of my recent work</p>
+
+        <div class="project-grid">
+          <div class="project-card glass">
+            <div class="project-image">
+              <img
+                src="<img"
+                src="assets/imgs/
+project1.jpg"
+              />
+              alt="Hypermarket Website" />
+            </div>
+            <div class="project-content">
+              <h3>Hypermarket Website</h3>
+              <p>
+                E-commerce layout, slider, cart system with secure payment
+                integration.
+              </p>
+              <div class="project-tech">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">Live Demo</a>
+                <a href="#" class="project-link">GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card glass">
+            <div class="project-image">
+              <img src="#" alt="Portfolio Website" />
+            </div>
+            <div class="project-content">
+              <h3>Portfolio Website</h3>
+              <p>Neon glass UI with 3D animations and interactive elements.</p>
+              <div class="project-tech">
+                <span>HTML/CSS</span>
+                <span>JavaScript</span>
+                <span>Three.js</span>
+              </div>
+              <div class="project-links">
+                <a href="http://127.0.0.1:5500/index.html" class="project-link"
+                  >Live Demo</a
+                >
+                <a href="#" class="project-link">GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card glass">
+            <div class="project-image">
+              <img src="/imgs/project3.jpg" alt="Fitness App UI" />
+            </div>
+            <div class="project-content">
+              <h3>Fitness App UI</h3>
+              <p>
+                Modern mobile-first responsive dashboard with workout tracking.
+              </p>
+              <div class="project-tech">
+                <span>React Native</span>
+                <span>Firebase</span>
+                <span>Chart.js</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">Live Demo</a>
+                <a href="#" class="project-link">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects-cta">
+          <p>Interested in seeing more?</p>
+          <a href="project.html" class="btn btn-primary">View All Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-subtitle">Let's work together</p>
+
+        <div class="contact-content">
+          <div class="contact-info">
+
+  <!-- EMAIL (icon + text clickable) -->
+<a href="#" id="emailLink" class="contact-item">
+  <i class="fas fa-envelope"></i>
+  <div>
+    <h3>Email</h3>
+    <p>digitalorbitals7819@gmail.com</p>
+  </div>
+</a>
+
+
+
+  <!-- PHONE (icon + text clickable) -->
+  <a href="tel:+916398987451" class="contact-item">
+    <i class="fas fa-phone"></i>
+    <div>
+      <h3>Phone</h3>
+      <p>+91 6398987451</p>
+    </div>
+  </a>
+
+  <!-- LOCATION (unchanged) -->
+  <div class="contact-item">
+    <i class="fas fa-map-marker-alt"></i>
+    <div>
+      <h3>Location</h3>
+      <p>Rampur(up 🇮🇳)</p>
+    </div>
+  </div>
+
+</div>
+
+
+          <form
+            action="https://formspree.io/f/xdkyvjvo"
+            method="POST"
+            class="contact-form glass"
+          >
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <input type="text" name="subject" placeholder="Subject" required />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              rows="5"
+              required
+            ></textarea>
+            <button type="submit" class="send-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h2>Aman<span>.dev</span></h2>
+            <p>Web Developer</p>
+          </div>
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h3>Follow Me</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-dribbble"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 Aman Khan. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" class="back-to-top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

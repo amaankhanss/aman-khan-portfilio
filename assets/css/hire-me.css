@@ -1,0 +1,89 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+    --primary-color: #6c63ff;
+    --secondary-color: #ff6584;
+    --dark-color: #1a1a2e;
+    --darker-color: #0f0f1a;
+    --light-color: #f5f5f7;
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    --transition: all 0.3s ease;
+}
+
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         color: var(--light-color);
+         background-color: var(--darker-color);      
+      min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-image: url(/imgs/hrie.webp);
+      }
+
+      section {
+        width: 100%;
+        max-width: 500px;
+      }
+
+      .contact-form {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 15px;
+        padding: 40px;
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      }
+
+      input, textarea {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.9);
+        font-size: 16px;
+        outline: none;
+        transition: 0.3s;
+      }
+
+      input:focus, textarea:focus {
+        background: rgba(255, 255, 255, 1);
+        box-shadow: 0 0 10px rgba(102, 126, 234, 0.5);
+      }
+
+      .send-btn {
+        width: 100%;
+        padding: 12px;
+        margin-top: 15px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .send-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+      }
+
+      @media (max-width: 768px) {
+        .contact-form {
+          padding: 30px 20px;
+        }
+        
+        input, textarea {
+          padding: 10px;
+          font-size: 14px;
+        }
+      }
