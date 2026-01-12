@@ -295,3 +295,89 @@ section {
     padding: 60px 0;
   }
 }
+@media (max-width: 576px) {
+  body {
+    font-size: 14px;
+  }
+
+  section {
+    padding: 50px 0;
+  }
+
+  .container {
+    width: 92%;
+  }
+}
+@media (max-width: 576px) {
+  .hero-content {
+    padding-top: 100px;
+  }
+
+  .profile-pic {
+    width: 130px;
+    height: 130px;
+  }
+
+  .hero-subtitle {
+    font-size: 1.05rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+    padding: 0 5px;
+  }
+}
+@media (max-width: 576px) {
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-text p {
+    font-size: 0.95rem;
+  }
+
+  .about-stats {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .skill-card {
+    padding: 20px;
+  }
+
+  .skill-card img {
+    width: 50px;
+  }
+}
+@media (max-width: 576px) {
+  .project-card {
+    padding: 18px;
+  }
+
+  .project-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .project-card p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 576px) {
+  .contact-item {
+    gap: 10px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.95rem;
+  }
+}
