@@ -27,6 +27,12 @@ body {
     color: var(--light-color);
     background-color: var(--darker-color);
     overflow-x: hidden;
+    
+  cursor: url("/assets/imgs/Purple\ Gradient\ Animated--cursor--SweezyCursors.png") 1 1, auto;
+  
+  
+
+
 }
 
 .container {
@@ -459,8 +465,8 @@ h1, h2, h3, h4, h5 {
   width: 24px;
   height: 24px;
   object-fit: contain;
-  filter: grayscale(100%) brightness(1.2);
-  transition: transform 0.25s ease, filter 0.25s ease;
+  /* filter: grayscale(100%) brightness(1.2);
+  transition: transform 0.25s ease, filter 0.25s ease; */
 }
 
 .skill-item:hover img {
@@ -924,6 +930,16 @@ h1, h2, h3, h4, h5 {
     background: #5a52e0;
     transform: translateY(-3px);
 }
+
+
+
+a,
+button,
+.card,
+.clickable {
+  cursor: url("/assets/imgs/Purple\ Gradient\ Animated--pointer--SweezyCursors.png") 16 8, pointer;
+}
+
 
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 992px) {
