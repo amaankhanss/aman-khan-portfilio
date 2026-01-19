@@ -15,29 +15,6 @@
     --glass-border: rgba(255, 255, 255, 0.2);
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     --transition: all 0.3s ease;
-
- 
-    --bg-primary: #0a0a0a;
-    --bg-secondary: #111111;
-    --bg-tertiary: #1a1a1a;
-    --text-primary: #ffffff;
-    --text-secondary: #a0a0a0;
-    --text-muted: #666666;
-    --accent-primary: #00d4ff;
-    --accent-secondary: #0099cc;
-    --accent-gradient: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
-    --accent-gradient-hover: linear-gradient(135deg, #00bfea 0%, #0088bb 100%);
-    --border-accent: rgba(0, 212, 255, 0.15);
-    --shadow-glow: 0 0 60px rgba(0, 212, 255, 0.15);
-    --shadow-card: 0 20px 40px rgba(0, 0, 0, 0.3);
-    --shadow-hover: 0 30px 60px rgba(0, 0, 0, 0.4);
-    --border-radius: 16px;
-    --border-radius-pill: 50px;
-    --transition-smooth: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    --transition-fast: all 0.2s ease;
-    --transition-spring: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    --glass-bg: rgba(255, 255, 255, 0.05);
-    --glass-border: rgba(255, 255, 255, 0.1);
 }
 
 html {
@@ -52,20 +29,17 @@ body {
     overflow-x: hidden;
     
   cursor: url("/assets/imgs/Purple\ Gradient\ Animated--cursor--SweezyCursors.png") 1 1, auto;
- touch-action: s;
   
+  
+
+
 }
 
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-  
     padding: 0 20px;
-}
-
-::-webkit-scrollbar {
-    width: 8px;
 }
 
 /* ===== TYPOGRAPHY ===== */
@@ -647,110 +621,6 @@ h1, h2, h3, h4, h5 {
   background: linear-gradient(90deg, #6c63ff, #8b5cf6);
   transition: width 1.5s ease;
 }
-services {
-    background: var(--bg-secondary);
-    position: relative;
-}
-
-.services::before {
-    content: '';
-    position: absolute;
-    top: 20%;
-    right: -10%;
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle, rgba(0, 212, 255, 0.1) 0%, transparent 70%);
-    border-radius: 50%;
-    filter: blur(100px);
-    animation: float 8s ease-in-out infinite;
-}
-
-.services-content {
-    max-width: 1300px;
-    margin: 0 auto;
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-}
-
-.service-card {
-    background: var(--glass-bg);
-    border: 1px solid var(--glass-border);
-    border-radius: var(--border-radius);
-    padding: 2.5rem;
-    text-align: center;
-    backdrop-filter: blur(10px);
-    transition: var(--transition-smooth);
-    position: relative;
-    overflow: hidden;
-}
-
-.service-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.1), transparent);
-    transition: left 0.5s;
-}
-
-.service-card:hover::before {
-    left: 100%;
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
-    border-color: var(--accent-primary);
-    box-shadow: var(--shadow-hover);
-}
-
-.service-icon {
-    width: 80px;
-    height: 80px;
-    background: var(--accent-gradient);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 1.5rem;
-    font-size: 2rem;
-    color: var(--bg-primary);
-    position: relative;
-    z-index: 1;
-}
-
-.service-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: var(--text-primary);
-}
-
-.service-card p {
-    color: var(--text-secondary);
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-}
-
-.service-features {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    justify-content: center;
-}
-
-.service-features span {
-    background: rgba(0, 212, 255, 0.1);
-    color: var(--accent-primary);
-    padding: 0.3rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 500;
-}
 
 
 
@@ -1182,17 +1052,8 @@ button,
     .social-icons {
         justify-content: center;
     }
-    services-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
 }
 
-	@media (max-width: 480px){
-        service-card {
-        padding: 2rem;
-    }
-    }
 @media (max-width: 576px) {
     .container {
         width: 95%;
