@@ -1,5 +1,5 @@
 // Smooth Scroll
-document.querySelectorAll('a[href^="#"]').forEach(link => {
+document.querySelectorAll('a[href^="body"]').forEach(link => {
     link.addEventListener("click", function(e){
         e.preventDefault();
         document.querySelector(this.getAttribute("href")).scrollIntoView({
@@ -15,12 +15,7 @@ new Typed("#typed", {
   
 });
 
-// new Typed("#typed-sub", {
-//   strings: ["Front-End Developer", "Web Designer"],
-//   typeSpeed: 100,
-//   backSpeed: 60,
-//   loop: true
-// });
+
 
 
 const eduBars = document.querySelectorAll(".progress-fill");
@@ -78,5 +73,24 @@ document.getElementById("emailLink").addEventListener("click", function (e) {
   }
 });
 
+
+// ===== MOBILE NAV TOGGLE =====
+const mobileMenu = document.getElementById("mobile-menu");
+const navLinks = document.querySelector(".nav-links");
+
+mobileMenu.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+  mobileMenu.classList.toggle("active");
+});
+
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+});
 
 
