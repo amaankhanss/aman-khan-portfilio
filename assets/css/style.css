@@ -217,6 +217,7 @@ h1, h2, h3, h4, h5 {
     background: linear-gradient(135deg, var(--dark-color) 0%, var(--darker-color) 100%);
     position: relative;
     overflow: hidden;
+      padding-top: 120px;  
 }
 
 .hero::before {
@@ -228,6 +229,7 @@ h1, h2, h3, h4, h5 {
     height: 100%;
     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" opacity="0.05"><polygon fill="%236C63FF" points="0,1000 1000,0 1000,1000"/></svg>');
     background-size: cover;
+      
 }
 
 .hero-content {
