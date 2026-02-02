@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+      cursor: url("/assets/imgs/Purple\ Gradient\ Animated--cursor--SweezyCursors.png") 1 1, auto;
 }
 
 :root {
@@ -28,7 +29,7 @@ body {
     background-color: var(--darker-color);
     overflow-x: hidden;
     
-  cursor: url("/assets/imgs/Purple\ Gradient\ Animated--cursor--SweezyCursors.png") 1 1, auto;
+
   
   
 
@@ -241,12 +242,19 @@ h1, h2, h3, h4, h5 {
 .profile-pic {
     width: 180px;
     height: 180px;
-    border-radius: 50%;
+    border-radius: 16%;
     object-fit: cover;
     border: 5px solid var(--glass-border);
     margin-bottom: 2rem;
     box-shadow: var(--shadow);
+    cursor: pointer;
 }
+.profile-pic:hover{
+    background: #5a52e0;
+    transform: translateY(-6px);
+    transition: calc(-23px);
+}
+
 
 .hero h2 {
     font-size: 3rem;
